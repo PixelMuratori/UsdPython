@@ -1,2 +1,4 @@
 usd_build/**
 **/__pycache__
+**/*.pyc
+build
