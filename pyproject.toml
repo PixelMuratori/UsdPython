@@ -21,6 +21,9 @@ include = ["pxr*"]
 
 [tool.setuptools]
 include-package-data = true
+ext-modules = [
+  {name = "pxr.dummy", sources = ['dummy.c']}
+]
 
 [tool.setuptools.package-data]
 "pxr" = ["**/*.**"] # install everything found in packaged_usd/pxr. it is already well formed and prepared
