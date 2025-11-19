@@ -1,6 +1,7 @@
 **/__pycache__
 **/*.pyc
 .venv*
+dist
 usd_build
 packaged_usd
 build
