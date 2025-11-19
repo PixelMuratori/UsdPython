@@ -14,11 +14,9 @@ Usage examples:
   python prepare_package.py --src C:/dev/OpenUSD --install C:/dev/usd-install --skip-build
 """
 from __future__ import annotations
-import glob
 import shutil
 import subprocess
 import sys
-import distutils
 from pathlib import Path
 
 
@@ -119,9 +117,6 @@ def main():
     run_build()
     prepare_package()
 
-    dist = Path('dist')
-    if dist.exists():
-        shutil.rmtree('dist')
     # build package
     build_package_cmd = [
         sys.executable, '-m', 'build', '--wheel', '--outdir', 'dist',
