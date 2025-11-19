@@ -1,4 +1,4 @@
-# Usd – Custom Pixar USD Python Build
+# PixelMuratori'S Custom Pixar USD Python Build
 
 **Full Pixar USD build with Python, UsdImaging, Hydra, and plugins**
 Maintained by **PixelMuratori**
@@ -36,6 +36,8 @@ pip install git+https://github.com/PixelMuratori/Usd.git
 
 ## 📜 License
 
-Based on Pixar USD (Apache 2.0)<br>
-LICENSE and NOTICE files are included in this package.<br>
-You may use, modify, and redistribute this package according to the Apache 2.0 terms.
+MIT License
+
+OpenUSD LICENSE and NOTICE files are included in this package.
+
+Other licenses for OpenUSD dependencies are listed in their full license file, distributed with the python package.
