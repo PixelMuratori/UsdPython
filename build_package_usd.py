@@ -114,47 +114,10 @@ if sys.version_info >= (3, 8, 0):
 os.environ['PATH'] = dllPath + os.pathsep + os.environ['PATH']
 ''')
 
-def py_distribution_name():
-    # Detect Python version
-    py_tag = f"cp{sys.version_info.major}{sys.version_info.minor}"
-    abi_tag = py_tag  # for compiled extensions, ABI tag is same as python tag
-
-    # Detect platform
-    plat_tag = distutils.util.get_platform()
-
-    return f"{py_tag}-{abi_tag}-{plat_tag}"
-
-
-def rename_wheel_to_platform():
-    """
-    Rename a universal wheel (py3-none-any) to a platform-specific wheel
-    based on current Python version and OS architecture.
-
-    Example:
-        usd-1.0.0-py3-none-any.whl
-        -> usd-1.0.0-cp39-cp39-win_amd64.whl
-    """
-    wheel_dir = Path('dist')
-
-    # Find the wheel file
-    wheels = glob.glob(str(wheel_dir) + "/*.whl")
-    if not wheels:
-        raise FileNotFoundError(f"No wheel found in {wheel_dir}")
-    if len(wheels) > 1:
-        raise RuntimeError(f"Multiple wheels found in {wheel_dir}, cannot auto-rename")
-
-    old_wheel = Path(wheels[0])
-    base_name = old_wheel.name.replace("py3-none-any", py_distribution_name())
-    new_wheel = wheel_dir / base_name
-
-    # Rename
-    shutil.move(old_wheel, new_wheel)
-    print(f"Renamed wheel: {old_wheel} → {new_wheel}")
-    return new_wheel
 
 def main():
-    # run_build()
-    # prepare_package()
+    run_build()
+    prepare_package()
 
     dist = Path('dist')
     if dist.exists():
@@ -164,8 +127,6 @@ def main():
         sys.executable, '-m', 'build', '--wheel', '--outdir', 'dist',
     ]
     run_cmd(build_package_cmd)
-
-    rename_wheel_to_platform()
 
 if __name__ == "__main__":
     main()
