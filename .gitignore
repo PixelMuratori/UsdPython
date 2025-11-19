@@ -1,4 +1,6 @@
-usd_build/**
 **/__pycache__
 **/*.pyc
+.venv
+usd_build
+packaged_usd
 build

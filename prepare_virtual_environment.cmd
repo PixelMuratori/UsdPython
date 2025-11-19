@@ -7,10 +7,10 @@ IF NOT EXIST ".venv" (
 )
 
 call .venv\Scripts\activate.bat
-python pip install --upgrade pip
+python -m pip install --upgrade pip
+pip install build
 pip install jinja2
-pip install PySide6
+pip install PySide6-Essentials
 pip install PyOpenGL
 
 echo Environment is ready!
-pause

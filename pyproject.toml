@@ -7,30 +7,26 @@ name = "Usd"
 version = "1.0.0"
 description = "Full Pixar USD build with Python, UsdImaging, Hydra, and plugins"
 authors = [{ name = "Pixel Muratori" }]
-license-files = ["usd_package/LICENSE.txt", "usd_package/NOTICE.txt"]
-requires-python = ">=3.10"
-readme = "usd_package/README.md"
+license-files = ["packaged_usd/LICENSE.txt", "packaged_usd/NOTICE.txt"]
+requires-python = ">=3.9"
+readme = "packaged_usd/README.md"
 dependencies = [
     "jinja2",
     "PyOpenGL"
 ]
 
 [tool.setuptools.packages.find]
-where = ["usd_build/lib/python"]
+where = ["packaged_usd/site-packages"]
 include = ["pxr*"]
 
 [tool.setuptools]
 include-package-data = true
 
 [tool.setuptools.package-data]
-"pxr" = ["**/*.**"] # install everything found in usd_package. it is already well formed and prepared
+"pxr" = ["**/*.**"] # install everything found in packaged_usd/pxr. it is already well formed and prepared
 
 
 [tool.setuptools.data-files]
-"Lib/site_packages/pxr" = [
-    "usd_build/lib/*.dll",
-    "usd_build/bin/*.dll"
-]
 "Scripts" = [
-    "usd_build/Scripts/*"
+    "packaged_usd/Scripts/*"
 ]
