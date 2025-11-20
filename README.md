@@ -19,11 +19,12 @@ This repository provides a **prebuilt Python package of Pixar USD** with the fea
 ---
 
 ## Installation
+The available prebuilt packages are part of the release of this repositori, and an index page is available at this adress https://pixelmuratori.github.io/UsdPython/
 
-Install directly from GitHub (public repo):
+Than can b used with pip in this way:
 
 ```bash
-pip install git+https://github.com/PixelMuratori/Usd.git
+pip install --find-links=https://pixelmuratori.github.io/UsdPython/ Usd
 ```
 
 ## Requirements
