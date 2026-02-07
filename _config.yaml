@@ -1,0 +1,5 @@
+title: PixelMuratori USD Python
+description: Prebuilt Pixar USD Python wheels with Hydra and Qt support
+theme: minima
+github:
+  is_project_page: false
