@@ -5,7 +5,7 @@
 - Precompiled binaries for **Windows** (Python ≥ 3.9)
 - Included **plugins, scripts, and resources**
 
-> [!WARNING]  
+> [!IMPORTANT]
 > This package is intended to **save build time** for our team and ensure all team members use the **same USD build**. It is **not the official usd-core** package, and it contains custom modifications.
 
 ---
