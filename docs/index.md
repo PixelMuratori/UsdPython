@@ -1,6 +1,4 @@
-# PixelMuratori's USD Python
-
-This repository provides a **prebuilt Python package of Pixar USD** with the features our team needs, including:
+**Prebuilt Python packages of Pixar USD** with the features our team needs, including:
 
 - **UsdImaging & Hydra** support
 - **Qt viewer integration** (embedded in Qt windows)
