@@ -18,6 +18,8 @@
 * [usd-1.0.0-cp311-cp311-win_amd64.whl](https://github.com/PixelMuratori/UsdPython/releases/download/v1.0.0/usd-1.0.0-cp311-cp311-win_amd64.whl)
 * [usd-1.0.0-cp312-cp312-win_amd64.whl](https://github.com/PixelMuratori/UsdPython/releases/download/v1.0.0/usd-1.0.0-cp312-cp312-win_amd64.whl)
 * [usd-1.0.0-cp313-cp313-win_amd64.whl](https://github.com/PixelMuratori/UsdPython/releases/download/v1.0.0/usd-1.0.0-cp313-cp313-win_amd64.whl)
+  
 
 #### Linux
 * [usd-1.0.0-cp313-cp313-linux_x86_64.whl](https://github.com/PixelMuratori/UsdPython/releases/download/v1.0.0/usd-1.0.0-cp313-cp313-linux_x86_64.whl)
+* [usd-1.0.0-cp314-cp314-linux_x86_64.whl](https://github.com/PixelMuratori/UsdPython/releases/download/v1.0.0/usd-1.0.0-cp314-cp314-linux_x86_64.whl)
